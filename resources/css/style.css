@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+
+body{
+    background-color: rgb(128, 156, 145);
+    padding: 80px 0 0 0;
+}
+
+body, input, button {
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    padding: 15px;
+    top: 0; 
+    left: 0;
+    z-index: 5;
+    background: #2f9781;
+    box-shadow: 0px 2px 4px rgba(44, 62, 80,0.15);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header input {
+    width: 90%;
+    height: 50px;
+    float: left;
+    margin-top: 5px;    
+    color:#fff;
+    font-size: 20px;
+    font-weight: 400;
+    text-indent: 15px;
+    /*padding: 0 30px 0 0;*/
+    background: rgba(255,255,255,0.2);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 0px;
+}
+
+header input::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.75);
+}
+header button {
+    border-radius: 25px;
+    width: 45px;
+    height: 45px;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+
+header button i{
+    font-size:50px;
+    margin-left: -8px;
+    margin-top: -3px;
+}
+
+ul.todo {
+    width: 100%;
+    float: right;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flex-container > div {
+    width: 90%;
+    height: 40%;
+    margin-top: 5%;
+}
+
+/*.checkbox {
+    width: 25px;
+    height: 25px;
+    float: left;
+    box-shadow: 2px 3px 2px 3px rgb(228, 226, 140);
+    margin: 3px 20px 0 0;
+}
+
+
+.ordertime {
+    width: 5%;
+    height: 25px;
+    float: center;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px 3px rgb(228, 226, 140);
+}*/
+
+ul.todo li{
+    width: 75%;
+    height: 25px;
+    float: left;
+    text-indent: 10px;
+    list-style-type: none;
+    background-color: rgb(222, 215, 252);
+    border-radius: 10px;
+    box-shadow: 2px 3px 2px 3px rgb(228, 226, 140);
+    opacity: 1;
+    margin: 0 0 100px 0;
+}
+
+ul.todo li .buttons button:nth-last-of-type:before{
+    content: '';
+    width: 1px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: red;
+}
+
+ul.todo li .buttons button {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -11px 0 0 -11px;
+}
+
+
+/*.todo li{ */
+    
+/*.done {
+    width: 80%;
+    height: 50px;
+    float: left;
+    background-color: rgba(67, 161, 99, 0.377);
+    border-radius: 10px;
+}*/
